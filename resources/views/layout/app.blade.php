@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts - Choose an artistic font from Google Fonts -->
@@ -20,7 +19,9 @@
 <body>
     <!-- Your page content goes here -->
     @include('layout.navigation')
-    @yield('content')
+    <div class="container">
+        @yield('content')
+    </div>
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
